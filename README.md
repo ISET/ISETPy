@@ -2,7 +2,7 @@
 
 We are starting to make it simpler to call Python libraries from Matlab. We did this for the HDR simulations [isethdrsensor](https://github.com/ISET/isethdrsensor). In that case, it enabled running neural networks trained with PyTorch.  We expect that there will be more cases in which we incorporate Python libraries with ISETCam calculations.  This repository is intended to document a general approach and to make it easy to call some obvious libraries. (OpenCV ...?)
 
-## Creating a Python environment from a mac terminal
+## Creating a Python environment (MAC terminal)
 
 We recommend Miniconda installation on the Mac. Here are installation suggestions 
 
@@ -30,17 +30,19 @@ The principles are here:
 
 ### Incorporating the demosaic requirements - 
 
-To run the demosaicing code, we need to install the libraries specified.  In that case we created a requirements.txt file, and ran
+To run the demosaicing code, we need to install the libraries specified.  In that case we created a requirements.txt file.  We placed it in utility/python/requirements.txt. We changed into that directory and ran
 
 `pip install -r requirements.txt`
 
-### Matlab created% the python environment with this command
+### Matlab python environment 
 
 (Sonoma version of the MacOS)
 
+Matlab manages an interface to Python, which they create using the [*pyenv*](https://www.mathworks.com/help/releases/R2025a/matlab/ref/pyenv.html) command.
+
 `pyenv('Version','/opt/miniconda3/envs/py39/bin/python');`
 
-### Confirm that Matlab sees the environment 
+### Confirm that Matlab communicates with Python
 
 For example, try running
 
