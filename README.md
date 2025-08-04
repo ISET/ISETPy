@@ -24,6 +24,26 @@ You will then have a py39 environment activated as a python environment, which y
 
 ## ISETCam setup
 
-In which we describe the pyenv and such.
+Our first example was using neural network ONXX files in the isethdrsensor repository.  See that repository for the full instructions.
+
+The principles are here:
+
+### Incorporating the demosaic requirements - 
+
+To run the demosaicing code, we need to install the libraries specified.  In that case we created a requirements.txt file, and ran
+
+`pip install -r requirements.txt`
+
+### Matlab created% the python environment with this command
+
+(Sonoma version of the MacOS)
+
+`pyenv('Version','/opt/miniconda3/envs/py39/bin/python');`
+
+### Confirm that Matlab sees the environment 
+
+For example, try running
+
+`result = py.list([1, 2, 6]);`
 
 
