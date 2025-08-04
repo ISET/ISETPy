@@ -28,11 +28,13 @@ Our first example was using neural network ONXX files in the isethdrsensor repos
 
 The principles are here:
 
-### Incorporating the demosaic requirements - 
+### Incorporating the requirements
 
-To run the demosaicing code, we need to install the libraries specified.  In that case we created a requirements.txt file.  We placed it in utility/python/requirements.txt. We changed into that directory and ran
+To run your code, you probably need to have your environment include some libraries. We suppose that each project will have a **requirements.txt** file, or something like it.  For the isethdrsensor repository, we placed the file in utility/python/requirements.txt. We changed into that directory and ran
 
 `pip install -r requirements.txt`
+
+That installed the necessary libraries.
 
 ### Matlab python environment 
 
@@ -47,5 +49,13 @@ Matlab manages an interface to Python, which they create using the [*pyenv*](htt
 For example, try running
 
 `result = py.list([1, 2, 6]);`
+
+### An example method
+
+The [isethdrsensor repository](https://github.com/ISET/isethdrsensor) implemented the (Python) neural network call using this function:  **isetDemosaicNN**
+
+It is not awful, but it is a bit complicated.  Have a look.  This repository aims to keep hacking at the incorporation and making it simpler, both for ONXX files and other libraries.
+
+
 
 
