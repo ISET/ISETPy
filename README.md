@@ -1,10 +1,8 @@
 # ISETPy
-Collecting up Python methods that we may want to use from ISET repositories.
 
-## Python in Matlab
 We are starting to make it simpler to call Python libraries from Matlab. We did this for the HDR simulations [isethdrsensor](https://github.com/ISET/isethdrsensor). In that case, it enabled running neural networks trained with PyTorch.  We expect that there will be more cases in which we incorporate Python libraries with ISETCam calculations.  This repository is intended to document a general approach and to make it easy to call some obvious libraries. (OpenCV ...?)
 
-### Creating a Python environment from a mac terminal
+## Creating a Python environment from a mac terminal
 
 We recommend Miniconda installation on the Mac. Here are installation suggestions 
 
@@ -23,4 +21,9 @@ We recommend Miniconda installation on the Mac. Here are installation suggestion
 `conda activate py39  `
 
 You will then have a py39 environment activated as a python environment, which you can see in the terminal window (zsh).  That is the environment we will call from MATLAB.
+
+## ISETCam setup
+
+In which we describe the pyenv and such.
+
 
